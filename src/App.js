@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './components/Login';
+import Registration from './components/Registration';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="https://i.ibb.co/xqfT6bX/mandala.png" className="App-logo" alt="logo" />
-        <p>
-          Get Started With Shop Module!
-        </p>
-        <a
-          className="App-link"
-          href="https://glimpass.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Do Glimpass
-        </a>
-      </header>
-    </div>
+    <Router basename="/glimpass-shop">
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Registration />} />
+      </Routes>
+    </Router>
+    
+    
   );
 }
 
