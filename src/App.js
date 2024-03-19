@@ -5,17 +5,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="https://i.ibb.co/xqfT6bX/mandala.png" className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Get Started With Shop Module!
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://glimpass.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Do Glimpass
         </a>
       </header>
     </div>
